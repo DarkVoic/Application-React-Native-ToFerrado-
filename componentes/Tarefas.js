@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, FlatList, TextInput, Button, Keyboard} from 'react-native';
+import {View, Text, FlatList, TextInput, TouchableOpacity, Keyboard, Image} from 'react-native';
 import styles from '../estilos';
 import Tarefa from './Tarefa';
 
@@ -43,7 +43,14 @@ export default function Tarefas(props){
                     onBlur={Keyboard.dismiss}
                     ref={(r) =>(_input = r)}
                 />
-                <Button onPress={adiciona} title="Adicionar"/>
+                <TouchableOpacity onPress={adiciona}>
+                    <View style={[styles.button, styles.primary]}>
+                        <Image
+                            source={require("../assets/plus0.png")}
+                            style={styles.buttonImg}
+                        />
+                    </View>
+                </TouchableOpacity>
             </View>
         </View>
     );

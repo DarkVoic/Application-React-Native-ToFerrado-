@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, KeyboardAvoidingView } from 'react-native';
+import { View, KeyboardAvoidingView, Platform } from 'react-native';
 import React, {useState} from 'react';
 import Tarefas from './componentes/Tarefas';
 import Cabecalho from './componentes/Cabecalho';

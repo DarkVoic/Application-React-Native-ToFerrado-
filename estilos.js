@@ -148,6 +148,17 @@ export default StyleSheet.create({
     height: 15,
     width: 15,
     resizeMode: 'stretch'
+  },
+  buttonIncluir:{
+    height: 30,
+    padding: 10,
+    borderRadius: 5,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginLeft: 2,
+    marginRight: 2,
   },  
   // cores
   active: {
