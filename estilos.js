@@ -231,4 +231,43 @@ export default StyleSheet.create({
   mt4: {
     marginTop: 48,
   },
+
+  blank: {
+    flex: 1,
+    opacity: 0.25,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  blankImg: {
+    width: "80%",
+    height: 300,
+    resizeMode: 'contain',
+  },
+
+  login: {
+  backgroundColor: "#306090",
+  justifyContent: "center",
+  alignItems: "center",
+  flex: 1,
+  },
+  loginTitulo: {
+    textAlign: "center",
+    fontSize: 45,
+    fontWeight: "bold",
+    color: "white",
+  },
+  loginBotao: {
+    marginTop: 20,
+    borderWidth: 1,
+    borderColor: "white",
+    backgroundColor: "#D0D0D0",
+    padding: 15,
+    width: 200,
+    borderRadius: 15,
+  },
+  loginBotaoTexto: {
+    textAlign: "center",
+    fontSize: 20,
+  },
 });

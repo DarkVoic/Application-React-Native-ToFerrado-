@@ -32,6 +32,12 @@ export default function Tarefas(props){
                     ItemSeparatorComponent={()=>(
                         <View style={styles.liSeparator}/>
                     )}
+                    ListEmptyComponent={() => (
+                        <View style={styles.blank}>
+                            <Image source={require('../assets/hangloose.png')} style={styles.blankImg}/>
+                            <Text>Nada a fazer agora.</Text>
+                        </View>
+                    )}
                 />
             </View>
             <View style={[styles.field, styles.mt2]}>
@@ -44,7 +50,7 @@ export default function Tarefas(props){
                     ref={(r) =>(_input = r)}
                 />
                 <TouchableOpacity onPress={adiciona}>
-                    <View style={[styles.button, styles.primary]}>
+                    <View style={[styles.button, styles.primary]}> 
                         <Image
                             source={require("../assets/plus0.png")}
                             style={styles.buttonImg}
